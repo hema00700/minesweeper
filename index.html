@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>كاسحة الألغام - Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الصفحة الرئيسية -->
+    <div id="mainPage">
+        <h1 id="gameTitle">Minesweeper</h1>
+        <button id="startGameBtn">ابدأ اللعبة</button>
+    </div>
+
+    <!-- اللعبة نفسها (التي ستظهر عند الضغط على الزر) -->
+    <div id="gamePage" style="display: none;">
+        <!-- هنا ستوضع اللعبة نفسها -->
+        <div id="status">
+            <div>🧭 المرحلة: <span id="level">1</span></div>
+            <div>⏱️ الوقت: <span id="timer">0</span> ثانية</div>
+            <div>💣 الألغام المتبقية: <span id="remainingMines">0</span></div>
+            <div>🟫 الخانات المتبقية: <span id="remainingCells">0</span></div>
+            <div>🏆 الهاي سكور: <span id="highScore">0</span></div>
+        </div>
+        <div id="game"></div>
+
+        <!-- خيار إعادة اللعبة أو العودة -->
+        <div class="options">
+            <button id="restartBtn">إعادة اللعبة</button>
+            <button id="homeBtn">العودة للصفحة الرئيسية</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
